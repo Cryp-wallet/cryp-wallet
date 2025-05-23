@@ -64,3 +64,32 @@ In your component:
 import QRCode from "qrcode.react";
 
 <QRCode value={address} />
+
+// ✅ Stage 2 – ETH Balance (Mocked)
+
+// ---
+// 📁 File Location
+// src/utils/balance.js
+// This file is new — it only contains one function: getEthBalance()
+
+// ---
+// 📦 What This Does
+// ✅ Takes a wallet address
+// ✅ Returns a fake ETH balance like "0.015 ETH"
+// ✅ This is used to show balance on the home screen
+
+// ---
+// 📥 How to Use in UI
+
+import { getEthBalance } from "../utils/balance";
+
+const balance = await getEthBalance(wallet.address);
+setBalance(balance); // show this in Home screen
+
+// ---
+// 🧪 Output Expected
+
+Balance: 0.015 ETH
+
+// ---
+// ❗ No real ETH is used. This is just for showing how the home page will work visually.
