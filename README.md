@@ -1,15 +1,20 @@
 # cryp-wallet
 Just letting you know — this code is the very first step in the wallet I’m building.
 What I’m trying to do is build a simple crypto wallet extension that works step by step.
+
 Right now, it only handles:
+
 1.Generating a 12-word secret phrase for the user
 2.Creating a wallet from that phrase
 3.Getting the wallet’s public address
 4.Showing a fake ETH balance (just for testing, no real ETH)
+
 Later I’ll be adding:
+
 1.The ability to send fake/test ETH to another wallet (just a simulation, not real money)
 2.A “Receive” function where the user sees their wallet address and can also scan it as a QR code
 3.Possibly a “Sign message” feature (used for authentication), still deciding on that part
+
 All of this is done step by step so we don’t get confused. Let me know if anything’s unclear — I’ll guide you through every part as we build.
 ------------------------------------------------------------------------------------------------------
 📁 Folder Structure (after unzip or cloning)
