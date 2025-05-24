@@ -103,7 +103,6 @@ import { getEthBalance } from "../utils/balance";
 
 const balance = await getEthBalance(wallet.address);
 setBalance(balance); // show this in Home screen
-
 // ---
 // 🧪 Output Expected
 
@@ -111,3 +110,16 @@ Balance: 0.015 ETH
 
 // ---
 // ❗ No real ETH is used. This is just for showing how the home page will work visually.
+
+SEND BALANCE- 
+this is the mock Send ETH function for the Send screen.
+It’s in src/utils/send.js.
+You’ll use it when the user fills in the receiver address + amount and clicks Send.
+
+How to Import & Use in UI-
+
+import { sendEth } from "../utils/send";
+
+const tx = await sendEth(wallet.address, receiver, amount);
+console.log(tx); // or show TX result in UI
+
